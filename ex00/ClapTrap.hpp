@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:01 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/28 11:46:15 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/01/29 10:33:02 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <string>
 #include <iostream>
+#include <limits>
 
 class ClapTrap{
 
@@ -31,9 +32,9 @@ public:
 
 private:
 	std::string	_name;
-	int			_hit;
+	int			_health_hit;
 	int			_energy;
-	int			_attack;
+	int			_attack_damage;
 };
 
 #endif

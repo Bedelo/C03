@@ -4,7 +4,7 @@ CFLAGS	= -Wall -Werror -Wextra -std=c++98
 RM		= rm -f
 
 SRCS	=	./main.cpp \
-			./Fixed.cpp 
+			./ClapTrap.cpp 
 			
 OBJS	= $(SRCS:.cpp=.o)
 
