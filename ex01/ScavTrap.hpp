@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 11:26:59 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/29 11:35:10 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/01/29 12:58:27 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ public:
 
 	ScavTrap & operator=(ScavTrap const & rhs);
 	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+	// void takeDamage(unsigned int amount);
+	// void beRepaired(unsigned int amount);
 	void guardGate();
 	
 private:

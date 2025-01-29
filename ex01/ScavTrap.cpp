@@ -6,12 +6,11 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 11:27:04 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/29 12:19:00 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/01/29 12:47:57 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
-
 
 ScavTrap::ScavTrap(void): ClapTrap() {
 	this->_health_hit = 100;
@@ -30,7 +29,7 @@ ScavTrap::ScavTrap(std::string name): ClapTrap() {
 	return ;
 }
 
-ScavTrap::ScavTrap(ScavTrap const & src){
+ScavTrap::ScavTrap(ScavTrap const & src): ClapTrap(src){
 	std::cout << "ScavTrap Copy constructor called" << std::endl;
 	*this = src;
 	return ; 
