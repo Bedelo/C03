@@ -6,13 +6,13 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 12:40:40 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/29 12:59:49 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/03 11:07:59 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./FragTrap.hpp"
 
-FragTrap::FragTrap(void): FragTrap() {
+FragTrap::FragTrap(void): ClapTrap() {
 	this->_health_hit = 100;
 	this->_energy = 50;
 	this->_attack_damage = 20;
@@ -20,7 +20,7 @@ FragTrap::FragTrap(void): FragTrap() {
 	return ;
 }
 
-FragTrap::FragTrap(std::string name): FragTrap() {
+FragTrap::FragTrap(std::string name): ClapTrap() {
 	this->_name = name;
 	this->_health_hit = 100;
 	this->_energy = 50;
@@ -29,7 +29,7 @@ FragTrap::FragTrap(std::string name): FragTrap() {
 	return ;
 }
 
-FragTrap::FragTrap(FragTrap const & src): FragTrap(src){
+FragTrap::FragTrap(FragTrap const & src): ClapTrap(src){
 	std::cout << "FragTrap Copy constructor called" << std::endl;
 	*this = src;
 	return ; 

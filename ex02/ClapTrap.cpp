@@ -6,12 +6,11 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:06 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/29 12:19:32 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/03 11:08:45 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
-
 
 ClapTrap::ClapTrap(void): _name("Unknown"), _health_hit(10), _energy(10), _attack_damage(0) {
 	std::cout << "Constructor default called" << std::endl;

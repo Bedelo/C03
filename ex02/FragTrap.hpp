@@ -6,13 +6,16 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 12:40:37 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/29 12:44:03 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/03 11:09:23 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FRAG_TRAP_H
+#define FRAG_TRAP_H
+
 #include "./ClapTrap.hpp"
 
-class FragTrap{
+class FragTrap: public ClapTrap{
 
 public:
 	FragTrap(void);
@@ -33,3 +36,4 @@ private:
 	int			_attack_damage;
 };
 
+#endif
