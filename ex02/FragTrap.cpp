@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 12:40:40 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 11:07:59 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 11:40:14 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 FragTrap::FragTrap(void): ClapTrap() {
 	this->_health_hit = 100;
-	this->_energy = 50;
-	this->_attack_damage = 20;
+	this->_energy = 100;
+	this->_attack_damage = 30;
 	std::cout << "FragTrav Constructor default called" << std::endl;
 	return ;
 }
@@ -23,8 +23,8 @@ FragTrap::FragTrap(void): ClapTrap() {
 FragTrap::FragTrap(std::string name): ClapTrap() {
 	this->_name = name;
 	this->_health_hit = 100;
-	this->_energy = 50;
-	this->_attack_damage = 20;
+	this->_energy = 100;
+	this->_attack_damage = 30;
 	std::cout << "FragTrap Constructor with name called" << std::endl;
 	return ;
 }

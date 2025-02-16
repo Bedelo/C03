@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:06 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 11:08:45 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 11:38:40 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap(void): _name("Unknown"), _health_hit(10), _energy(10), _attac
 	return ;
 }
 
-ClapTrap::ClapTrap(std::string name): _name(name), _health_hit(10), _energy(10), _attack_damage(2) {
+ClapTrap::ClapTrap(std::string name): _name(name), _health_hit(10), _energy(10), _attack_damage(10) {
 	std::cout << "Constructor with name called" << std::endl;
 	return ;
 }
@@ -61,7 +61,7 @@ void ClapTrap::attack(const std::string& target){
 
 void ClapTrap::takeDamage(unsigned int amount){
 	if (this->_health_hit < 1){
-		std::cout << "hmm, " << this->_name << " has no more health. He already dead!" << std::endl;
+		std::cout << "hmm, " << this->_name << " has no more health." << std::endl;
 		return ;
 	}
 	if (amount >= static_cast<unsigned int> (this->_health_hit))
