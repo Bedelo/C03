@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:06 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/16 12:54:22 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 13:06:41 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ void ClapTrap::beRepaired(unsigned int amount){
 	}
 	if (this->_health_hit + amount > std::numeric_limits<unsigned int>::max()){
 		std::cout << "add " << amount << " to health causes an overflow! " << std::endl;
-		std::cout << "therefore health is limit to " << std::numeric_limits<unsigned int>::max() << "!"<< std::endl;
+		std::cout << "therefore health is limited to " << std::numeric_limits<unsigned int>::max() << "!"<< std::endl;
 		this->_health_hit = std::numeric_limits<unsigned int>::max();
 	}
 	else
