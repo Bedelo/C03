@@ -6,12 +6,12 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 11:26:59 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 11:02:20 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 10:00:00 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAV_TRAP_H
-#define SCAV_TRAP_H
+#ifndef SCAV_TRAP_HPP
+#define SCAV_TRAP_HPP
 
 # include "./ClapTrap.hpp"
 

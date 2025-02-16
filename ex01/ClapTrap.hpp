@@ -6,12 +6,12 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:01 by bsunda            #+#    #+#             */
-/*   Updated: 2025/01/29 12:58:17 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 09:59:52 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAP_TRAP_H
-#define CLAP_TRAP_H
+#ifndef CLAP_TRAP_HPP
+#define CLAP_TRAP_HPP
 
 #include <string>
 #include <iostream>

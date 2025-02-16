@@ -6,12 +6,12 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 12:40:37 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 11:09:23 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 10:00:11 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAG_TRAP_H
-#define FRAG_TRAP_H
+#ifndef FRAG_TRAP_HPP
+#define FRAG_TRAP_HPP
 
 #include "./ClapTrap.hpp"
 
