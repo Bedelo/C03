@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:01 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/16 10:00:05 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 12:17:14 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ public:
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 
-private:
+protected:
 	std::string	_name;
 	int			_health_hit;
 	int			_energy;

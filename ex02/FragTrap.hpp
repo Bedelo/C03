@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 12:40:37 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/16 10:00:11 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 12:51:20 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,8 @@ public:
 
 	FragTrap & operator=(FragTrap const & rhs);
 	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
 	void highFivesGuys(void);
 
-private:
-	std::string	_name;
-	int			_health_hit;
-	int			_energy;
-	int			_attack_damage;
 };
 
 #endif

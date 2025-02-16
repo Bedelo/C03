@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:06:06 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/16 11:38:40 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/16 12:54:22 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,19 +68,19 @@ void ClapTrap::takeDamage(unsigned int amount){
 		this->_health_hit = 0;
 	else
 		this->_health_hit -= amount;
-	std::cout << "ClapTrap " << this->_name << " took " << amount << " damage" << std::endl;
+	std::cout << this->_name << " took " << amount << " damage" << std::endl;
 	if (this->_health_hit == 0)
-		std::cout << "sory, it's over , ClapTrap " << this->_name << " has no more health" << std::endl;
+		std::cout << "sory, it's over , " << this->_name << " has no more health" << std::endl;
 	
 }
 
 void ClapTrap::beRepaired(unsigned int amount){
 	if (this->_energy < 1){
-		std::cout << "ClapTrap " << this->_name << " doesn't have enough energy" << std::endl;
+		std::cout << this->_name << " doesn't have enough energy" << std::endl;
 		return ;
 	}
 	if (this->_health_hit < 1){
-		std::cout << "ClapTrap " << this->_name << " doesn't have enough health" << std::endl;
+		std::cout << this->_name << " doesn't have enough health" << std::endl;
 		return;
 	}
 	if (this->_health_hit + amount > std::numeric_limits<unsigned int>::max()){
@@ -91,7 +91,7 @@ void ClapTrap::beRepaired(unsigned int amount){
 	else
 	{
 		this->_health_hit += amount;
-		std::cout << "ClapTrap " << this->_name << " add " << amount<< " to health( new value:" << this->_health_hit << ")." << std::endl;	
+		std::cout << this->_name << " add " << amount<< " to health( new value:" << this->_health_hit << ")." << std::endl;	
 	}
 	this->_energy--;
 	return ;
